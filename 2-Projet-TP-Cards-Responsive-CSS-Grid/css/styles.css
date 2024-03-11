@@ -1,0 +1,362 @@
+.btn{
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(44, 45, 50);
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    /*height: 2rem;*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(23, 24, 28);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+/************
+    HEADER
+*************/
+
+header{
+    background-color: rgb(29, 30, 35);
+    border: 2px solid rgb(44, 45, 50);
+    margin: 1rem 1rem 0 1rem;
+    position: sticky;
+    top: 1rem;
+}
+
+.navbar{
+    margin: 1rem;
+    height: 17rem;
+}
+
+.navbar__form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.navbar__form--search{
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+
+
+.navbar__form--search-input{
+    width: 100%;
+}
+
+.navbar__form--search-input::placeholder{
+    text-align: left;
+}
+.navbar__form--search-btn{
+    position: absolute;
+    background-color: rgb(31, 38, 149);
+    height: 100%;
+    border: none;
+}
+
+.navbar__form--search-btn{
+    margin-right: 0.5rem;
+    height: 80%;
+    bottom: 0.3rem;
+    padding: 0 1rem;
+}
+
+.navbar__form--search-btn span{
+    display: none;
+}
+
+.navbar-form--textbtn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navbar__form--sort i{
+    margin-left: 1rem;
+}
+
+.navbar__form-filters{
+    background-color: rgb(219, 31, 95);
+}
+
+.navbar__form-filters i{
+    margin-left: 1rem;
+}
+
+/************
+    MAIN
+*************/
+
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+
+}
+
+    /*CARD*/
+
+.card{
+    margin: 0 1rem;
+    border:  2px solid rgb(44, 45, 50);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+    background-color: rgb(29, 30, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.card__header-btn{
+    cursor: pointer;
+    background-color: rgb(17, 61, 255);
+    border: none;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 0.75rem;
+    height: 1.5rem;
+    padding: 0 0.75rem;
+}
+
+.card_header-pricehour{
+    margin: 0;
+}
+
+.card__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card__title p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card__home p{
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.card__evaluation{
+    display: flex;
+    font-size: 0.75rem;
+}
+
+.card__icons-star{
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+    margin-left: 1rem;
+    color: rgb(246, 194, 73);
+}
+
+.card__evaluation p{
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+    margin-left: 3rem;
+}
+
+.card__button-discipline{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card__button-discipline p{
+    background-color: rgb(16, 21, 31);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem 0.5rem;
+}
+
+.card__text{
+    margin: 0.5rem 1rem;
+    text-align: justify;
+}
+
+hr{
+    width: 100%;
+}
+
+/************
+    FOOTER
+*************/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/*******************
+    MEDIA QUERIES
+********************/
+
+@media screen and (min-width: 480px) {
+    .navbar__form--search-btn span{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 576px){
+
+    .navbar{
+        height: auto;
+    }
+
+    .navbar__form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr;
+    }
+
+    .navbar__form--search{
+        grid-column: 1/3;
+    }
+
+    .navbar__form--rate{
+        grid-column: 1/1;
+    }
+
+    .navbar__form--sort{
+        grid-column: 1/1;
+    }
+
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 1rem;
+    }
+
+    .card{
+        margin: 0;        
+    }
+
+    .card__button-discipline button{
+        margin: 1rem 0.25rem;
+    }
+    .card__button-discipline button a{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .navbar{
+        height: auto;
+    }
+
+    .navbar__form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .navbar__form--search{
+        grid-column: 1/3;
+    }
+
+    .navbar__form--rate{
+        grid-column: 3/4;
+    }
+
+    .navbar__form--subject{
+        grid-column: 1/2;
+    }
+
+    .navbar__form--sort{
+        grid-column: 2/3;
+    }
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .navbar__form{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+        height: 3.5rem;
+    }
+
+    .navbar__form--search{
+        grid-column: 1/4;
+    }
+
+    .navbar__form--search-btn{
+        margin-right: 0.5rem;
+        height: 80%;
+        bottom: 0.3rem;
+        padding: 0 1rem;
+    }
+
+    .navbar__form--rate{
+        grid-column: 4/4;
+    }
+    
+    .navbar__form--subject{
+        grid-column: 5/5;
+    }
+    
+    .navbar__form--sort{
+        grid-column: 6/6;
+    }
+    
+    .navbar__form--filters{
+        grid-column: 7/7;
+    }
+
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
