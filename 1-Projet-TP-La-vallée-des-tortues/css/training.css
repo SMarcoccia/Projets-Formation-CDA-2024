@@ -7,31 +7,36 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    min-width: min-content;
 }
 
 h1, h2{
     color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 0 2rem;
+    padding: 0.75rem 0.75rem;
+    font-size: 2.25rem;
 }
 
+ul{
+    list-style-type: none;
+}
+
+/* HEADER */
+
 header{
-    background: linear-gradient(rgba(31, 191, 184, 0.54), rgba(3, 17, 99, 0.54)), url("../images/banner.jpg") top;
-    background-size: cover;
-    height: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(rgba(31, 191, 184, 0.54), rgba(3, 17, 99, 0.54)), url("../images/banner.jpg") top/cover;
+    height: 12.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}    
-
-header h1{
-    
-    padding: 0.5rem 1rem;
-    margin: 0 2rem;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 5px;
-    text-transform: uppercase;
 }
+
+/* MAIN */
 
 main {
     display: flex;
@@ -40,84 +45,135 @@ main {
 }
 
 main h2{
-    color: #1FBFB8;
+    color: #031163;
+    margin: 0.5rem 0 0.5rem -1rem;
+    font-size: 1.5rem;
 }
 
 main #img-visit {
-    background: url("../images/visit.jpg") center;
+    background: url("../images/training.jpg") center;
     background-size: cover;
-    height: 200px;
+    height: 13rem;
 }
 
 main #img-visit #overlay{
-    background-color: rgba(31, 191, 184, 0.54);
-    width: 100%;
+    background-color: rgba(3, 17, 99, 0.54);
+    width: auto;
     text-align: center;
 }
 
 main #img-visit #overlay h2{
     color: white;
     font-size: 1rem;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     margin: 0;
+    border: none;
+    font-weight: inherit;
+}
+
+section {
+    margin: 2rem 1rem 1rem 1rem;
 }
 
 main section #link-home{
     margin-left: 2rem;
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
-section {
-    margin: 1rem;
+main section #link-home a i{
+    font-size: 1.75rem;
+    color: #0A415B;
 }
 
+main section article p{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
 
+/* FOOTER */
 
-footer{
-    background-image: linear-gradient(to right, rgba(31, 191, 184), rgba(3, 17, 99));
+footer ul{
+    list-style-type: none;
+}
+
+footer>ul{
+    background: linear-gradient(to right, rgba(31,191, 184,0.70), rgba(3, 17, 99, 0.70));   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin: 0;
+    padding-top: 2rem;
+    padding-left: 0;
 }
 
 footer h2{
     text-transform: uppercase;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 1rem 1rem;
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.75rem;
 }
 
-footer div{
-    width: 65%;
+footer #mention-legal{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
 }
 
-footer div a{
+footer #mention-legal a{
     color: white;
+    margin: 0 5px;
 }
 
-footer div ul {
+footer #mention-legal ul {
     display: flex;
-    list-style-type: none;
     padding: 0;
+    margin-left: 5rem;
 }
 
-
-footer div ul li a i{
+footer i{
     color: white;
+    margin-left: 1px;
+}
 
+/* MEDIA QUERIE */
+
+@media screen and (min-width: 750px) {
+
+    main section{
+        margin-top: 1rem;
+    }
+
+    main h2{
+        margin: 0;
+        margin-left: -1rem;
+    }
+
+    main section article p{
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    footer #mention-legal ul {
+        margin-left: 16rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     main{
         flex-direction: row;
         flex: 1;
+    }
+
+    main h2{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     main #img-visit{
@@ -129,5 +185,17 @@ footer div ul li a i{
         font-size: 1.5rem;
         font-weight: 400;
         padding: 2rem 0;
+    }
+
+    footer #mention-legal #mention-legal__link{
+        margin-right: 21rem;
+    }
+
+    footer #mention-legal{
+        font-size: 2.25rem;
+    }
+
+    footer #mention-legal ul{
+        margin-right: 9.5rem;
     }
 }
