@@ -1,69 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/favorites.css">
+        <link rel="time5h30">
+        <title>Welcome to RobotsFriends</title>
+    </head>
 <body>
     <header>
-        <nav>
-           <ul class="nav-header-ul">
-                <li class="logo">
-                    <a href="./index.html"><img src="./images/logo.png" alt="logo-robotsFriends"></a>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__menuburger-icon"><button><i class="fa-solid fa-bars"></i><i class="fa-solid fa-square-xmark"></i></button></li>
+                <li class="navbar__logo">
+                    <div><a class="navbar__logo-link" href="./index.html"><img src="./images/logo.png" alt=""></a></div>
                 </li>
-                <li class="persona">
-                    <img src="./images/men.jpg" alt="">
-                    <div class="name-email">
-                        <p class="name-email__name">Joseph Joe</p>
-                        <p class="name-email__email">josephjoe@gmail.com</p>
+                <li class="navbar__persona">
+                    <div id="navbar__persona-image"></div>
+                    <div class="navbar__persona-info">
+                        <p class="navbar__persona-name">Joseph &nbsp; Joe</p>
+                        <p class="navbar__persona-email">josephjoe@gmail.com</p>
                     </div>
                 </li>
-           </ul>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="navbar-lateral">
-            <nav class="nav-menu">
-                <div class="menu">
-                    <h2>menu</h2>
-                    <ul>
-                        <li><a href="./index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
-                        <li><a href="./favorites.html"><i class="fa-solid fa-heart"></i>&nbsp;Favorites</a></li>
-                    </ul>
-                </div>
-                <div class="settings">
-                    <h2>settings</h2>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-circle-user"></i>&nbsp;My Account</a></li>
-                        <li><a href=""><i class="fa-solid fa-paintbrush"></i>&nbsp;Preferences</a></li>
-                    </ul>
-                </div>
-                <div class="footer">
-                    <h2>RobotsFriends</h2>
-                    <P>V1.0 - July 2023</P>
-                </div>
+        <section>
+            <nav class="navbar-lateral">
+                <ul class="navbar-lateral__list">
+                    <li class="navbar-lateral__list-menu">
+                        <h3>menu</h3>
+                        <div><a href="./index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></div>
+                        <div><a href="./favorites.html"><i class="fa-solid fa-heart"></i><span>Favorites</span></a></div>
+                    </li>
+                    <li class="navbar-lateral__list-settings">
+                        <h3>settings</h3>
+                        <div><a href="#"><i class="fa-solid fa-circle-user"></i><span>My Account</span></a></div>
+                        <div><a href="#"><i class="fa-solid fa-paintbrush"></i><span>Preferences</span></a></div>
+                    </li>
+                    <li class="navbar-lateral__footer">
+                        <div><a class="navbar__menu-logo" href="./index.html"><img src="./images/logo.png" alt=""></a></div>
+                        <div>V1.0 - July 2024</div>
+                    </li>
+                </ul>
             </nav>
         </section>
-        <section class="cards">
-            <div class="search-friend">
-                <h1>My Favorites Friends</h1>
-                <form action="get">
-                    <input type="text" name="">
+        
+        <section>
+            <div class="search-friends">
+                <form class="search-friends__form">
+                    <input id="search-friends__form-search" type="search" name="search" placeholder="Search a friend">
+                    <span><i class="fa fa-search"></i></span>
                 </form>
             </div>
-            <div id="box-tags"></div>
-            <div id="favorites-list"></div>
+            <div id="box-cards"></div>
         </section>
     </main>
+    <footer></footer>
+
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
-    integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-    <script src="./favorites.js"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+        integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="./js/favorites.js"></script>
 </body>
 </html>
