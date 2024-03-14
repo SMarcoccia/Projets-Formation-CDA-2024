@@ -3,9 +3,11 @@ const idUser=urlParams.get("id");
 
 const API_KEY = "apiKey=566ec7fa-471e-11ee-be56-0242ac120002";
 const URL="https://prfauraproject.up.railway.app/api/users/";
+const URLRobotsCat="https://robohash.org/4.png?set=set4";
 const URLRobots="https://robohash.org/RN";
 const extension=".png"
 
+const personaImage=document.getElementById("navbar__persona-image");
 const boxCard=document.getElementById("box-card");
 
 console.log("`${URL}${API_KEY}&id=${idUser}` : ", `${URL}${API_KEY}&id=${idUser}`);
@@ -14,9 +16,8 @@ axios
 .get(`${URL}${idUser}?${API_KEY}`)
 .then(res=>{
     const user = res.data;
-    console.log("user : ", user);
-    console.log("user.id : ", user.id);
     boxCard.innerHTML=createCards(user);
+    personaImage.innerHTML=`<img src="${URLRobotsCat}" alt="Joseph Joe"/>`
 
 });
 

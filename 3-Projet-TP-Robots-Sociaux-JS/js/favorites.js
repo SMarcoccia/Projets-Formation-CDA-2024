@@ -1,5 +1,6 @@
 const API_KEY = "566ec7fa-471e-11ee-be56-0242ac120002";
 const URL="https://prfauraproject.up.railway.app/api/users?apiKey=";
+const URLRobotsCat="https://robohash.org/4.png?set=set4"
 const URLRobots="https://robohash.org/RN";
 const extension=".png"
 
@@ -18,7 +19,6 @@ axios
         if(user.isFavorite){
             boxCards.innerHTML+=createCards(user);
         }
-
     }
 
     // Création de l'écouteur sur une card.
@@ -28,6 +28,8 @@ axios
             
         });
     }
+
+    personaImage.innerHTML=`<img src="${URLRobotsCat}" alt="Joseph Joe"/>`
 });
 
 
