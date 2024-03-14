@@ -8,7 +8,7 @@ const URLRobots="https://robohash.org/RN";
 const extension=".png"
 
 const personaImage=document.getElementById("navbar__persona-image");
-const boxCard=document.getElementById("box-card");
+const boxCard=document.getElementById("card__details");
 
 console.log("`${URL}${API_KEY}&id=${idUser}` : ", `${URL}${API_KEY}&id=${idUser}`);
 
