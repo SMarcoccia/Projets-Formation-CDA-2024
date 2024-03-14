@@ -1,6 +1,7 @@
 const API_KEY = "566ec7fa-471e-11ee-be56-0242ac120002";
 const URL="https://prfauraproject.up.railway.app/api/users?apiKey=";
 const URLRobots="https://robohash.org/RN";
+const URLRobotsCat="https://robohash.org/4.png?set=set4"
 const extension=".png"
 
 const boxTagsCities=document.getElementById("box-tags__cities");
@@ -47,6 +48,8 @@ axios
             }
         });
     }
+
+    personaImage.innerHTML=`<img src="${URLRobotsCat}" alt="Joseph Joe"/>`
 });
 
 
