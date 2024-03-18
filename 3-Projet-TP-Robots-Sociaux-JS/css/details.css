@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
+/* HEADER*/
+.navbar__list{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__menuburger-logo{
+    display: flex;
+}
+
+#navbar__persona-image img{
+    width: 2.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.navbar__persona-info{
+    display: none;
+}
+
+/* MAIN */
+.previous-page__arrow{
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: none;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.previous-page__arrow i{
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*iPhone 14*/
+/*@media screen and (min-width: 430px){
+    
+}*/
+
+/*iPad Pro 11*/
+@media screen and (min-width: 834px){
+    
+}
+
+@media screen and (min-width: 1440px){
+    
+}

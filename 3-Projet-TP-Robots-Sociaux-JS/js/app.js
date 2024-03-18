@@ -27,7 +27,6 @@ axios
             boxTagsCities.innerHTML+=`<button class="btn-tag">${city}</button>`
         }
         boxCards.innerHTML+=createCards(user);
-
     }
 
     // Création de l'écouteur sur les tags et affichage des cards en fonctions du tag choisie.
