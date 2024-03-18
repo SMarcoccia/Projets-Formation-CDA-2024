@@ -1,3 +1,319 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+    margin: 0 2rem;
+}
+
+.btn{
+    background-color: silver;
+    border-radius: 1rem;
+    -webkit-border-radius: -23%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid violet;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-weight: 700;
+    /*cursor: pointer;*/
+}
+
+/* HEADER*/
+header{
+    border-bottom: 2px solid rgb(238, 238, 238);
+    margin-bottom: 1rem;
+}
+
+.header__menuburger-open{
+    box-shadow: 0 4px 5px 0px gray;
+}
+
+.navbar__list{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__menuburger-logo{
+    display: flex;
+}
+
+#navbar__menuburger{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.navbar__menuburger-bars-hidden{
+    display: none;
+}
+
+.navbar__menuburger-crux-hidden{
+    display: none;
+}
+
+.navbar__menuburger-crux-view{
+    display: block;
+}
+
+#navbar__menuburger .fa-square-xmark,
+#navbar__menuburger .fa-bars{
+    font-size: 2.5rem;
+    padding: 0rem 0.25rem;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navbar__logo-link{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo-link img{
+    height: 1.5rem;
+    width: 13rem;
+}
+
+#navbar__persona-image img{
+    width: 2.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+}
+.navbar__persona-info{
+    display: none;
+}
+
+/* MAIN */
+
+/*Section navbar lateral*/
+
+.nav-lateral{
+	max-height: 0rem;
+	overflow: hidden;
+}
+
+.nav-lateral-view{
+    max-height: 32rem;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    -webkit-transition: max-height 0.3s;
+    -moz-transition: max-height 0.3s;
+    -ms-transition: max-height 0.3s;
+    -o-transition: max-height 0.3s;
+}
+
+.navbar-lateral-nav__list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-lateral-nav__list li{
+    margin-bottom: 4rem;
+}
+
+.navbar-lateral-nav__list-menu h3,
+.navbar-lateral-nav__list-settings h3{
+    color: gray;
+    text-transform: uppercase;
+    margin-left: 3rem;
+}
+
+.navbar-lateral-nav__list li div{
+    margin: 0.5rem 0rem;
+}
+
+.navbar-lateral-nav__list li div a{
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+}
+
+.navbar-lateral-nav__list li div a span{
+    margin-left: 1rem;
+}
+
+.navbar-lateral-nav__list-menu div a:hover,
+.navbar-lateral-nav__list-settings div a:hover {
+    background-color: rgb(220, 16, 126);
+    color: white;
+}
+
+.navbar-lateral-nav__footer div a img{
+   height: 1rem;
+}
+
+.navbar-lateral-nav__footer div:last-child{
+    margin-left: 3rem;
+}
+
+/*Section search, tags, cards*/
+.search-tags-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+.search-tags-cards-hidden{
+    display: none;
+}
+
+/*Search*/
+.search-friends{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-friends__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 59%;
+}
+
+#search-friends__form-search{
+    width: 166%;
+    cursor: auto;
+}
+
+.search-friends__form-icon{
+    position: absolute;
+    margin-right: 1rem;
+}
+
+/*Tags*/
+.box-tags{
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    margin: 2rem 0;
+}
+
+.box-tags__title{
+    display: none;
+}
+
+#box-tags__cities{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box-tags__cities button{
+    cursor: pointer;
+}
+
+/* Cards */
+#box-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    margin: 0.5rem 0;
+    width: 100%;
+    background-color: grey;
+    box-shadow: 0.5rem 0.25rem 0.25rem black;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card a{
+    text-decoration: none;
+    width: 100%;
+}
+
+.card__button{
+    position: absolute;
+    left: 87%;
+    top: 10%;
+}
+
+.card__button-heart:hover{
+    background-color:darkgrey
+}
+
+.card__button-heart{
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: none;
+    background-color: silver;
+}
+
+.card__button .fa-heart{
+    font-size: 1.5rem;
+}
+
+.card__imgInfo{
+    display: flex;
+}
+.card__box-image{
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.card__image{
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    height: 6rem;
+}
+
+.card__info{
+    color: white;
+}
+
+.card__info-name{
+    margin-bottom: 0.5rem;
+}
+
+.card__info-email{
+    margin: 0;
+}
+
+.card__info-email span,
+.card__info-phone span{
+    display: none;
+}
+
+.card__info-phone{
+    margin-top: 0;
+}
+
+/*iPhone 14*/
+/*@media screen and (min-width: 430px){
+    
+}*/
 
 /*iPad Pro 11*/
 @media screen and (min-width: 834px){
