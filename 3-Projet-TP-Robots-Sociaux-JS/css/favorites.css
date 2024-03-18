@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
+/* HEADER */
+.navbar__list{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__menuburger-logo{
+    display: flex;
+}
+
+#navbar__persona-image img{
+    width: 2.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.navbar__persona-info{
+    display: none;
+}
+
+/* MAIN */
+
+/*iPhone 14*/
+/*@media screen and (min-width: 430px){
+    
+}*/
+
+/*iPad Pro 11*/
+@media screen and (min-width: 834px){
+    
+}
+
+@media screen and (min-width: 1440px){
+    
+}
