@@ -9,12 +9,15 @@
         <title>Welcome to RobotsFriends</title>
     </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar">
             <ul class="navbar__list">
-                <li class="navbar__menuburger-icon"><button><i class="fa-solid fa-bars"></i><i class="fa-solid fa-square-xmark"></i></button></li>
-                <li class="navbar__logo">
-                    <div><a class="navbar__logo-link" href="./index.html"><img src="./images/logo.png" alt=""></a></div>
+                <li class="navbar__menuburger-logo">
+                    <button id="navbar__menuburger">
+                        <div id="navbar__menuburger-bars" class=""><i class="fa-solid fa-bars"></i></div>
+                        <div id="navbar__menuburger-crux" class="navbar__menuburger-crux-hidden"><i class="fa-solid fa-square-xmark"></i></div>
+                    </button>
+                    <div class="navbar__logo"><a class="navbar__logo-link" href="./index.html"><img src="./images/logo.png" alt=""></a></div>
                 </li>
                 <li class="navbar__persona">
                     <div id="navbar__persona-image"></div>
@@ -27,20 +30,20 @@
         </nav>
     </header>
     <main>
-        <section>
-            <nav class="navbar-lateral">
-                <ul class="navbar-lateral__list">
-                    <li class="navbar-lateral__list-menu">
+        <section id="navbar-lateral" class="nav-lateral">
+            <nav class="navbar-lateral-nav">
+                <ul class="navbar-lateral-nav__list">
+                    <li class="navbar-lateral-nav__list-menu">
                         <h3>menu</h3>
                         <div><a href="./index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></div>
                         <div><a href="./favorites.html"><i class="fa-solid fa-heart"></i><span>Favorites</span></a></div>
                     </li>
-                    <li class="navbar-lateral__list-settings">
+                    <li class="navbar-lateral-nav__list-settings">
                         <h3>settings</h3>
                         <div><a href="#"><i class="fa-solid fa-circle-user"></i><span>My Account</span></a></div>
                         <div><a href="#"><i class="fa-solid fa-paintbrush"></i><span>Preferences</span></a></div>
                     </li>
-                    <li class="navbar-lateral__footer">
+                    <li class="navbar-lateral-nav__footer">
                         <div><a class="navbar__menu-logo" href="./index.html"><img src="./images/logo.png" alt=""></a></div>
                         <div>V1.0 - July 2024</div>
                     </li>
@@ -48,15 +51,17 @@
             </nav>
         </section>
         
-        <section>
-            <div class="search-friends">
-                <form class="search-friends__form">
-                    <input id="search-friends__form-search" type="search" name="search" placeholder="Search a friend">
-                    <span><i class="fa fa-search"></i></span>
-                </form>
+        <section id="search-tags-cards" class="search-tags-cards">
+            <div class="tags-title-search-friends">
+                <h2 class="box-tags__title">Filter by City</h2>
+                <div class="search-friends">
+                    <form class="search-friends__form">
+                        <input id="search-friends__form-search" class="btn" type="search" name="search" placeholder="Search a friend">
+                        <span class="search-friends__form-icon"><i class="fa fa-search"></i></span>
+                    </form>
+                </div>
             </div>
             <div class="box-tags">
-                <h2 class="box-tags__title">Filter by City</h2>
                 <div id="box-tags__cities"></div>
             </div>
             <div id="box-cards"></div>
