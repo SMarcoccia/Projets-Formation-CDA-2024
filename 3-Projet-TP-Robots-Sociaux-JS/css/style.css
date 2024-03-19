@@ -20,7 +20,6 @@ main{
     padding: 0.5rem 1rem;
     margin: 0.25rem;
     font-weight: 700;
-    /*cursor: pointer;*/
 }
 
 /* HEADER*/
@@ -220,7 +219,18 @@ header{
     cursor: pointer;
 }
 
+#box-tags__cities .btn-tag-color,
+#box-tags__cities .btn-tag:hover{
+    background-color: rgb(220, 16, 126);
+    color: white;
+    border: 2px solid transparent;
+}
+
 /* Cards */
+.card-hidden{
+    display: none;
+}
+
 #box-cards{
     display: flex;
     flex-direction: column;
@@ -317,7 +327,67 @@ header{
 
 /*iPad Pro 11*/
 @media screen and (min-width: 834px){
+
+    /* MAIN */
+    .search-tags-cards{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 100%;
+    }
+
+    .search-tags-cards-hidden {
+        display: none;
+    }
+
+    /*Tags and Search friends*/
+    .tags-title-search-friends{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     
+    .box-tags__title{
+        display: block;
+    }
+
+    /*Card*/
+    #box-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        justify-self: center;
+        column-gap: 3rem;
+        row-gap: 1rem;
+    }
+
+    .card__imgInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 19rem;
+    }
+
+    .card__box-image{
+        margin: 0;
+    }
+    
+    .card__image{
+        margin: 0;
+        height: 13rem;
+    }
+
+    .card__info{
+        text-align: center;
+    }
+
+    .card__info p:last-child{
+        display: none;
+    }
+
+    .card__button{
+        left: 84%;
+        top: 4%;
+    }
+
 }
 
 @media screen and (min-width: 1440px){
